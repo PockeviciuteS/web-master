@@ -1,0 +1,52 @@
+@use '../abstracts/' as *;
+
+.section_text_p1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#about {
+    position: relative;
+
+}
+
+.about-details-contianer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .about-containers {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        .details-container {
+            padding: 1.5rem;
+            flex: 1;
+            background: $primary_white;
+            border-radius: 2rem;
+            border: $btn-border;
+            border-color: rgb(163, 163, 163);
+            text-align: center;
+        }
+    }
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 800%;
+}
+

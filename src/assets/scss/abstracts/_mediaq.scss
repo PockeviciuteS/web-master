@@ -1,0 +1,91 @@
+@use '../abstracts/' as *;
+@use './mixins';
+
+body {
+    @include large-desktop {
+        #profile {
+            height: 84vh;
+            margin-bottom: 6rem;
+        }
+
+        #projects {
+            height: fit-content;
+        }
+        .about-containers {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+body {
+    @include desktop {
+        #expereince, .expereince-detail-container {
+            margin-top: 2rem;
+        }
+        #hamburger-nav {
+            display: flex;
+        }
+        #desktop-nav {
+            display: none;
+        }
+        #profile, .section-container {
+            display: block;
+        }
+        section {
+            margin: 0.5%
+        }
+        .section_pic-container {
+            width: 275px;
+            height: 275px;
+            margin: 0 auto 2rem;
+        }
+        .about-containers {
+            margin: 0;
+        }
+    }
+}
+
+body {
+    @include phone {
+        #profile {
+            height: 83vh;
+            margin-bottom: 100px;
+            gap: 2rem;
+        }
+        article {
+            font-size: 1rem;
+        }
+        .about-containers, .btn-container {
+            flex-wrap: wrap;
+        }
+        .nav-links li a {
+            font-size: 1.25rem;
+        }
+        .experience-sub-title {
+            font-size: 1.25rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+        }
+        .nav-links {
+            flex-direction: column;
+            gap: 0.5rem;
+            text-align: center;
+        }
+        .section_text_p2 {
+            font-size: 1.25rem;
+        }
+        .title {
+            font-size: 2rem;
+        }
+        .text-container {
+            text-align: justify;
+        }
+        .arrow {
+            display: none;
+        }
+        .dev_img {
+            width: 60px;
+        }
+    }
+}
